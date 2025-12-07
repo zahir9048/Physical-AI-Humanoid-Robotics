@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "اگلا",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "تعارف",
+    "description": "The label for category 'Introduction' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 1: Foundations": {
+    "message": "مODULE 1: بنیادیں",
+    "description": "The label for category 'Module 1: Foundations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 2: ROS 2 Fundamentals": {
+    "message": "مODULE 2: ROS 2 کی بنیادیں",
+    "description": "The label for category 'Module 2: ROS 2 Fundamentals' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 3: Robot Simulation with Gazebo": {
+    "message": "مODULE 3: گزیبو کے ساتھ روبوٹ کی شبیہہ سازی",
+    "description": "The label for category 'Module 3: Robot Simulation with Gazebo' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 4: NVIDIA Isaac Platform": {
+    "message": "مODULE 4: NVIDIA Isaac پلیٹ فارم",
+    "description": "The label for category 'Module 4: NVIDIA Isaac Platform' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 5: Humanoid Robot Development": {
+    "message": "مODULE 5: ہیومنوڈ روبوٹ کی ترقی",
+    "description": "The label for category 'Module 5: Humanoid Robot Development' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 6: Conversational Robotics and Capstone Project": {
+    "message": "مODULE 6: گفتگو کا روبوٹیکس اور کیپسٹون پروجیکٹ",
+    "description": "The label for category 'Module 6: Conversational Robotics and Capstone Project' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Hardware & Setup": {
+    "message": "ہارڈ ویئر اور تنصیب",
+    "description": "The label for category 'Hardware & Setup' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "حوالہ جات",
+    "description": "The label for category 'Reference' in sidebar 'tutorialSidebar'"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prerequisites-setup",
+  "title": "Prerequisites and Development Environment Setup",
+  "description": "To ensure a smooth learning and development experience with the Physical AI & Humanoid Robotics textbook, it is essential to set up your development environment correctly. This section outlines the necessary prerequisites and provides guidance on configuring your system.",
+  "source": "@site/docs/prerequisites-setup.mdx",
+  "sourceDirName": ".",
+  "slug": "/prerequisites-setup",
+  "permalink": "/physical-ai-textbook/docs/prerequisites-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/prerequisites-setup.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Prerequisites and Setup"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hardware Requirements",
+    "permalink": "/physical-ai-textbook/docs/hardware-requirements"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/physical-ai-textbook/docs/glossary"
+  }
+}

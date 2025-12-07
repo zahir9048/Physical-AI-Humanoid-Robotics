@@ -1,0 +1,26 @@
+{
+  "id": "module-5/week-11",
+  "title": "Module 5: Humanoid Robot Development",
+  "description": "Week 11: Kinematics, Dynamics, and Motion Planning",
+  "source": "@site/docs/module-5/week-11.mdx",
+  "sourceDirName": "module-5",
+  "slug": "/module-5/week-11",
+  "permalink": "/physical-ai-textbook/docs/module-5/week-11",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-5/week-11.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 11: Kinematics, Dynamics, and Motion Planning"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 10: Reinforcement Learning and Sim-to-Real Transfer",
+    "permalink": "/physical-ai-textbook/docs/module-4/week-10"
+  },
+  "next": {
+    "title": "Week 12: Bipedal Locomotion, Grasping, and Human-Robot Interaction",
+    "permalink": "/physical-ai-textbook/docs/module-5/week-12"
+  }
+}

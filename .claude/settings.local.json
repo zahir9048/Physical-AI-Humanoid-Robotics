@@ -4,7 +4,15 @@
       "Bash(git fetch:*)",
       "Bash(ls:*)",
       "Bash(.specify/scripts/bash/setup-plan.sh:*)",
-      "Bash(.specify/scripts/bash/check-prerequisites.sh:*)"
+      "Bash(.specify/scripts/bash/check-prerequisites.sh:*)",
+      "Bash(npx create-docusaurus@latest:*)",
+      "Bash(npm install)",
+      "Bash(find docs/ -name \"*.mdx\" -exec basename {} ;)",
+      "Bash(npm run start)",
+      "Bash(npx docusaurus start --port 3001)",
+      "Bash(npm install @easyops-cn/docusaurus-search-local)",
+      "WebSearch",
+      "Bash(npm run write-translations)"
     ],
     "deny": [],
     "ask": []

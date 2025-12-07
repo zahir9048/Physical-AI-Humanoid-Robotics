@@ -1,0 +1,26 @@
+{
+  "id": "module-2/week-4",
+  "title": "Module 2: ROS 2 Fundamentals",
+  "description": "Week 4: ROS 2 Python Package Building and Launch Files",
+  "source": "@site/docs/module-2/week-4.mdx",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/week-4",
+  "permalink": "/physical-ai-textbook/docs/module-2/week-4",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-2/week-4.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 4: ROS 2 Python Package Building and Launch Files"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 3: ROS 2 Architecture and Core Concepts",
+    "permalink": "/physical-ai-textbook/docs/module-2/week-3"
+  },
+  "next": {
+    "title": "Week 5: Advanced ROS 2 Concepts and Tools",
+    "permalink": "/physical-ai-textbook/docs/module-2/week-5"
+  }
+}

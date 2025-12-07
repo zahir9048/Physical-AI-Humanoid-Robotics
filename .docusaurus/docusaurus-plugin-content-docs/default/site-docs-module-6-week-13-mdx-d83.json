@@ -1,0 +1,26 @@
+{
+  "id": "module-6/week-13",
+  "title": "Module 6: Conversational Robotics and Capstone Project",
+  "description": "Week 13: Conversational Robotics",
+  "source": "@site/docs/module-6/week-13.mdx",
+  "sourceDirName": "module-6",
+  "slug": "/module-6/week-13",
+  "permalink": "/physical-ai-textbook/docs/module-6/week-13",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-6/week-13.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 13: Conversational Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 12: Bipedal Locomotion, Grasping, and Human-Robot Interaction",
+    "permalink": "/physical-ai-textbook/docs/module-5/week-12"
+  },
+  "next": {
+    "title": "Capstone Project",
+    "permalink": "/physical-ai-textbook/docs/module-6/capstone-project"
+  }
+}

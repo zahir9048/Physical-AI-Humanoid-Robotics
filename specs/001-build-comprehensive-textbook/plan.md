@@ -14,12 +14,11 @@ Develop a comprehensive Physical AI & Humanoid Robotics textbook using Docusauru
 
 <!--
   ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+  for the project. The structure here is presented in advDocusaurus
 
 **Language/Version**: JavaScript/TypeScript (React), Node.js (for Docusaurus build)
 **Primary Dependencies**: Docusaurus 3.x, React, MDX, Algolia, Prism, Mermaid.
+Note: All development will strictly adhere to the latest Docusaurus documentation and best practices to ensure maintainability and leverage new features.
 **Storage**: Filesystem (Markdown/MDX files for content, static assets).
 **Testing**: React Testing Library/Jest for component testing, Playwright/Cypress for E2E, Vale for content linting, Docusaurus-mdx-checker CLI for MDX compatibility, automated link checking, and visual regression testing (e.g., Percy, Chromatic)..
 **Target Platform**: Web (Static Site).

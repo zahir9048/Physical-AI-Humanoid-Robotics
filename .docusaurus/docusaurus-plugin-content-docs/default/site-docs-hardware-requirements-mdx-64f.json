@@ -1,0 +1,26 @@
+{
+  "id": "hardware-requirements",
+  "title": "Hardware Requirements",
+  "description": "This section outlines the computational and hardware requirements for engaging with the Physical AI & Humanoid Robotics textbook. The demands vary based on the complexity of simulations, visual perception tasks, and the integration of generative AI models.",
+  "source": "@site/docs/hardware-requirements.mdx",
+  "sourceDirName": ".",
+  "slug": "/hardware-requirements",
+  "permalink": "/physical-ai-textbook/docs/hardware-requirements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/hardware-requirements.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Hardware Requirements"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Capstone Project",
+    "permalink": "/physical-ai-textbook/docs/module-6/capstone-project"
+  },
+  "next": {
+    "title": "Prerequisites and Setup",
+    "permalink": "/physical-ai-textbook/docs/prerequisites-setup"
+  }
+}

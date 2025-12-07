@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category 'Introduction' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 1: Foundations": {
+    "message": "Module 1: Foundations",
+    "description": "The label for category 'Module 1: Foundations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 2: ROS 2 Fundamentals": {
+    "message": "Module 2: ROS 2 Fundamentals",
+    "description": "The label for category 'Module 2: ROS 2 Fundamentals' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 3: Robot Simulation with Gazebo": {
+    "message": "Module 3: Robot Simulation with Gazebo",
+    "description": "The label for category 'Module 3: Robot Simulation with Gazebo' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 4: NVIDIA Isaac Platform": {
+    "message": "Module 4: NVIDIA Isaac Platform",
+    "description": "The label for category 'Module 4: NVIDIA Isaac Platform' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 5: Humanoid Robot Development": {
+    "message": "Module 5: Humanoid Robot Development",
+    "description": "The label for category 'Module 5: Humanoid Robot Development' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Module 6: Conversational Robotics and Capstone Project": {
+    "message": "Module 6: Conversational Robotics and Capstone Project",
+    "description": "The label for category 'Module 6: Conversational Robotics and Capstone Project' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Hardware & Setup": {
+    "message": "Hardware & Setup",
+    "description": "The label for category 'Hardware & Setup' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "Reference",
+    "description": "The label for category 'Reference' in sidebar 'tutorialSidebar'"
+  }
+}

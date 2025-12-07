@@ -1,0 +1,26 @@
+{
+  "id": "module-4/week-10",
+  "title": "Module 4: NVIDIA Isaac Platform",
+  "description": "Week 10: Reinforcement Learning and Sim-to-Real Transfer",
+  "source": "@site/docs/module-4/week-10.mdx",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/week-10",
+  "permalink": "/physical-ai-textbook/docs/module-4/week-10",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-4/week-10.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 10: Reinforcement Learning and Sim-to-Real Transfer"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 9: Perception and Manipulation in Isaac Sim",
+    "permalink": "/physical-ai-textbook/docs/module-4/week-9"
+  },
+  "next": {
+    "title": "Week 11: Kinematics, Dynamics, and Motion Planning",
+    "permalink": "/physical-ai-textbook/docs/module-5/week-11"
+  }
+}
