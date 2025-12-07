@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 001-build-comprehensive-textbook
 
 permissions:
   contents: write
