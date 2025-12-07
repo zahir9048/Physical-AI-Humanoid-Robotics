@@ -1,0 +1,22 @@
+{
+  "id": "additional-resources",
+  "title": "Additional Resources for Physical AI & Humanoid Robotics",
+  "description": "This page provides additional resources to supplement your learning in Physical AI and Humanoid Robotics.",
+  "source": "@site/docs/additional-resources.mdx",
+  "sourceDirName": ".",
+  "slug": "/additional-resources",
+  "permalink": "/physical-ai-textbook/docs/additional-resources",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/additional-resources.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Additional Resources"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/physical-ai-textbook/docs/glossary"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "/physical-ai-textbook/__docusaurus/debug-1b0": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/__docusaurus/debug/config-4ef": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/__docusaurus/debug/content-02c": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    },
+    "__props": "__props---physical-ai-textbook-docusaurus-debug-contentbe-4-6d3"
+  },
+  "/physical-ai-textbook/__docusaurus/debug/globalData-58f": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/__docusaurus/debug/metadata-647": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/__docusaurus/debug/registry-125": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/__docusaurus/debug/routes-aa1": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docusaurus-debugb-38-bdb"
+    }
+  },
+  "/physical-ai-textbook/search-400": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-search-138-d97"
+    }
+  },
+  "/physical-ai-textbook/docs-0c1": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-docsaba-346"
+    }
+  },
+  "/physical-ai-textbook/docs-7c9": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---physical-ai-textbook-docs-802-02c"
+  },
+  "/physical-ai-textbook/docs-d60": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/physical-ai-textbook/docs/additional-resources-b62": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-additional-resources-04-e-1f0"
+  },
+  "/physical-ai-textbook/docs/glossary-b3c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-glossaryf-30-ead"
+  },
+  "/physical-ai-textbook/docs/hardware-requirements-265": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-hardware-requirements-64-f-958"
+  },
+  "/physical-ai-textbook/docs/introduction/why-physical-ai-matters-857": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-introduction-why-physical-ai-mattersce-1-e2b"
+  },
+  "/physical-ai-textbook/docs/module-1/week-1-e85": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-1-week-1724-f00"
+  },
+  "/physical-ai-textbook/docs/module-1/week-2-0e4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-1-week-2402-567"
+  },
+  "/physical-ai-textbook/docs/module-2/week-3-8af": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-2-week-37-f-9-2c8"
+  },
+  "/physical-ai-textbook/docs/module-2/week-4-ef1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-2-week-4659-ae6"
+  },
+  "/physical-ai-textbook/docs/module-2/week-5-d7a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-2-week-5-ae-8-8a2"
+  },
+  "/physical-ai-textbook/docs/module-3/week-6-5de": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-3-week-629-e-35f"
+  },
+  "/physical-ai-textbook/docs/module-3/week-7-b2b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-3-week-7-d-29-f49"
+  },
+  "/physical-ai-textbook/docs/module-4/week-10-889": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-4-week-1077-b-0ad"
+  },
+  "/physical-ai-textbook/docs/module-4/week-8-969": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-4-week-8-ea-2-d5b"
+  },
+  "/physical-ai-textbook/docs/module-4/week-9-faa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-4-week-9-dc-8-53a"
+  },
+  "/physical-ai-textbook/docs/module-5/week-11-382": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-5-week-11-df-0-62c"
+  },
+  "/physical-ai-textbook/docs/module-5/week-12-be3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-5-week-12913-cb7"
+  },
+  "/physical-ai-textbook/docs/module-6/capstone-project-2e5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-6-capstone-project-47-c-241"
+  },
+  "/physical-ai-textbook/docs/module-6/week-13-f42": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-module-6-week-13-d-83-894"
+  },
+  "/physical-ai-textbook/docs/prerequisites-setup-c0b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---physical-ai-textbook-docs-prerequisites-setupadb-a88"
+  },
+  "/physical-ai-textbook/-014": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---physical-ai-textbook-a-74-979"
+    },
+    "config": "config---physical-ai-textbook-5-e-9-b42"
+  }
+}

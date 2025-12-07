@@ -1,0 +1,26 @@
+{
+  "id": "module-2/week-5",
+  "title": "Module 2: ROS 2 Fundamentals",
+  "description": "Week 5: Advanced ROS 2 Concepts and Tools",
+  "source": "@site/docs/module-2/week-5.mdx",
+  "sourceDirName": "module-2",
+  "slug": "/module-2/week-5",
+  "permalink": "/physical-ai-textbook/docs/module-2/week-5",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-2/week-5.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 5: Advanced ROS 2 Concepts and Tools"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 4: ROS 2 Python Package Building and Launch Files",
+    "permalink": "/physical-ai-textbook/docs/module-2/week-4"
+  },
+  "next": {
+    "title": "Week 6: Gazebo Setup and URDF/SDF Models",
+    "permalink": "/physical-ai-textbook/docs/module-3/week-6"
+  }
+}

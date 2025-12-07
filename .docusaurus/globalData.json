@@ -1,0 +1,123 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/physical-ai-textbook/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/physical-ai-textbook/docs",
+          "mainDocId": "introduction/why-physical-ai-matters",
+          "docs": [
+            {
+              "id": "additional-resources",
+              "path": "/physical-ai-textbook/docs/additional-resources",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "glossary",
+              "path": "/physical-ai-textbook/docs/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hardware-requirements",
+              "path": "/physical-ai-textbook/docs/hardware-requirements",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "introduction/why-physical-ai-matters",
+              "path": "/physical-ai-textbook/docs/introduction/why-physical-ai-matters",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/week-1",
+              "path": "/physical-ai-textbook/docs/module-1/week-1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/week-2",
+              "path": "/physical-ai-textbook/docs/module-1/week-2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/week-3",
+              "path": "/physical-ai-textbook/docs/module-2/week-3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/week-4",
+              "path": "/physical-ai-textbook/docs/module-2/week-4",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/week-5",
+              "path": "/physical-ai-textbook/docs/module-2/week-5",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/week-6",
+              "path": "/physical-ai-textbook/docs/module-3/week-6",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/week-7",
+              "path": "/physical-ai-textbook/docs/module-3/week-7",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/week-10",
+              "path": "/physical-ai-textbook/docs/module-4/week-10",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/week-8",
+              "path": "/physical-ai-textbook/docs/module-4/week-8",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/week-9",
+              "path": "/physical-ai-textbook/docs/module-4/week-9",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/week-11",
+              "path": "/physical-ai-textbook/docs/module-5/week-11",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-5/week-12",
+              "path": "/physical-ai-textbook/docs/module-5/week-12",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/capstone-project",
+              "path": "/physical-ai-textbook/docs/module-6/capstone-project",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-6/week-13",
+              "path": "/physical-ai-textbook/docs/module-6/week-13",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "prerequisites-setup",
+              "path": "/physical-ai-textbook/docs/prerequisites-setup",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/physical-ai-textbook/docs/introduction/why-physical-ai-matters",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

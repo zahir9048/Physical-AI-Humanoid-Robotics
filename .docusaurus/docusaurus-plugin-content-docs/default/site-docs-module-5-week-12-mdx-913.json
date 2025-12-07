@@ -1,0 +1,26 @@
+{
+  "id": "module-5/week-12",
+  "title": "Module 5: Humanoid Robot Development",
+  "description": "Week 12: Bipedal Locomotion, Grasping, and Human-Robot Interaction",
+  "source": "@site/docs/module-5/week-12.mdx",
+  "sourceDirName": "module-5",
+  "slug": "/module-5/week-12",
+  "permalink": "/physical-ai-textbook/docs/module-5/week-12",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-5/week-12.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 12: Bipedal Locomotion, Grasping, and Human-Robot Interaction"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 11: Kinematics, Dynamics, and Motion Planning",
+    "permalink": "/physical-ai-textbook/docs/module-5/week-11"
+  },
+  "next": {
+    "title": "Week 13: Conversational Robotics",
+    "permalink": "/physical-ai-textbook/docs/module-6/week-13"
+  }
+}

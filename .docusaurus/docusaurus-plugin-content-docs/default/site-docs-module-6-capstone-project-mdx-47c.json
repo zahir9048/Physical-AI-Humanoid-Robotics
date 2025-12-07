@@ -1,0 +1,26 @@
+{
+  "id": "module-6/capstone-project",
+  "title": "Module 6: Conversational Robotics and Capstone Project",
+  "description": "Capstone Project",
+  "source": "@site/docs/module-6/capstone-project.mdx",
+  "sourceDirName": "module-6",
+  "slug": "/module-6/capstone-project",
+  "permalink": "/physical-ai-textbook/docs/module-6/capstone-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-6/capstone-project.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Capstone Project"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 13: Conversational Robotics",
+    "permalink": "/physical-ai-textbook/docs/module-6/week-13"
+  },
+  "next": {
+    "title": "Hardware Requirements",
+    "permalink": "/physical-ai-textbook/docs/hardware-requirements"
+  }
+}

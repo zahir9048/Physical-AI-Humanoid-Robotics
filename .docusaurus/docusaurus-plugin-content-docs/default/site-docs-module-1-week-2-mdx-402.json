@@ -1,0 +1,26 @@
+{
+  "id": "module-1/week-2",
+  "title": "Module 1: Introduction to Physical AI",
+  "description": "Week 2: Humanoid Robotics Landscape and Sensor Systems",
+  "source": "@site/docs/module-1/week-2.mdx",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/week-2",
+  "permalink": "/physical-ai-textbook/docs/module-1/week-2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-1/week-2.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 2: Humanoid Robotics Landscape and Sensor Systems"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Week 1: Foundations of Physical AI and Embodied Intelligence",
+    "permalink": "/physical-ai-textbook/docs/module-1/week-1"
+  },
+  "next": {
+    "title": "Week 3: ROS 2 Architecture and Core Concepts",
+    "permalink": "/physical-ai-textbook/docs/module-2/week-3"
+  }
+}

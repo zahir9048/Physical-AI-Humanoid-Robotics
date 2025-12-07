@@ -1,0 +1,26 @@
+{
+  "id": "module-1/week-1",
+  "title": "Module 1: Introduction to Physical AI",
+  "description": "Week 1: Foundations of Physical AI and Embodied Intelligence",
+  "source": "@site/docs/module-1/week-1.mdx",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/week-1",
+  "permalink": "/physical-ai-textbook/docs/module-1/week-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-1/week-1.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Week 1: Foundations of Physical AI and Embodied Intelligence"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction: Why Physical AI Matters",
+    "permalink": "/physical-ai-textbook/docs/introduction/why-physical-ai-matters"
+  },
+  "next": {
+    "title": "Week 2: Humanoid Robotics Landscape and Sensor Systems",
+    "permalink": "/physical-ai-textbook/docs/module-1/week-2"
+  }
+}

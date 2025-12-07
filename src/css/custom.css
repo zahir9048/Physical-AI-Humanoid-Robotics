@@ -1,0 +1,110 @@
+/**
+ * Any CSS or SCSS file in this folder will be copied to the 'assets/css' folder and
+ * loaded in the client-side JavaScript. For example, if you have a file like
+ * `src/css/custom.css`, it should be transformed to `build/assets/css/custom.css`
+ * when you build your site.
+ */
+
+/* Custom styles for admonitions (tips, warnings, notes) */
+.theme-doc-admonition {
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+.theme-doc-admonition-tip {
+  border-left-color: var(--ifm-color-info);
+}
+
+.theme-doc-admonition-warning {
+  border-left-color: var(--ifm-color-warning);
+}
+
+.theme-doc-admonition-danger {
+  border-left-color: var(--ifm-color-danger);
+}
+
+/* Mobile responsiveness adjustments - Docusaurus provides good defaults, these are examples for further customization */
+@media screen and (max-width: 996px) {
+  .navbar__title {
+    display: none; /* Hide title on small screens */
+  }
+}
+
+/* RTL (Right-to-Left) support for Urdu language */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar__items--right {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+html[dir="rtl"] .navbar__items--left {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+html[dir="rtl"] .menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .pagination-nav__link--next {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .pagination-nav__link--prev {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .theme-admonition {
+  border-left: none;
+  border-right: 4px solid;
+}
+
+html[dir="rtl"] .theme-code-block {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Ensure code blocks remain LTR even in RTL layout */
+html[dir="rtl"] .prism-code {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL adjustments for documentation content */
+html[dir="rtl"] .markdown {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .table-of-contents {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL support for search results */
+html[dir="rtl"] .navbar__search {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+html[dir="rtl"] .search-icon {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .search-bar {
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+}
+
+/* Navbar logo sizing */
+.navbar__logo img {
+  width: auto;
+}

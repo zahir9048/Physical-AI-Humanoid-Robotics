@@ -1,0 +1,26 @@
+{
+  "id": "glossary",
+  "title": "Glossary of Robotics and AI Terms",
+  "description": "This glossary provides definitions for key terms used throughout the Physical AI & Humanoid Robotics textbook.",
+  "source": "@site/docs/glossary.mdx",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/physical-ai-textbook/docs/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/glossary.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "Glossary"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prerequisites and Setup",
+    "permalink": "/physical-ai-textbook/docs/prerequisites-setup"
+  },
+  "next": {
+    "title": "Additional Resources",
+    "permalink": "/physical-ai-textbook/docs/additional-resources"
+  }
+}
