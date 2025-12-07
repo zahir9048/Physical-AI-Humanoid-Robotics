@@ -5,10 +5,10 @@
   "source": "@site/docs/module-2/week-3.mdx",
   "sourceDirName": "module-2",
   "slug": "/module-2/week-3",
-  "permalink": "/physical-ai-textbook/docs/module-2/week-3",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-2/week-3",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-2/week-3.mdx",
+  "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/docs/module-2/week-3.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Week 2: Humanoid Robotics Landscape and Sensor Systems",
-    "permalink": "/physical-ai-textbook/docs/module-1/week-2"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-1/week-2"
   },
   "next": {
     "title": "Week 4: ROS 2 Python Package Building and Launch Files",
-    "permalink": "/physical-ai-textbook/docs/module-2/week-4"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-2/week-4"
   }
 }

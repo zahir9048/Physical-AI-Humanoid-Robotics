@@ -8,7 +8,7 @@ export default {
   "tagline": "From Foundations to Embodied Intelligence",
   "favicon": "img/favicon.ico",
   "url": "https://zahir9048.github.io",
-  "baseUrl": "/physical-ai-textbook/",
+  "baseUrl": "/Physical-AI-Humanoid-Robotics/",
   "organizationName": "zahir9048",
   "projectName": "physical-ai-textbook",
   "onBrokenLinks": "throw",
@@ -26,7 +26,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/home/zahir/physical-ai-textbook/sidebars.js",
-          "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/",
+          "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/",
           "remarkPlugins": [
             null
           ]
@@ -70,7 +70,7 @@ export default {
           "position": "right"
         },
         {
-          "href": "https://github.com/zahir9048/physical-ai-textbook",
+          "href": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics",
           "label": "GitHub",
           "position": "right"
         }
@@ -111,7 +111,7 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/zahir9048/physical-ai-textbook"
+              "href": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics"
             }
           ]
         }

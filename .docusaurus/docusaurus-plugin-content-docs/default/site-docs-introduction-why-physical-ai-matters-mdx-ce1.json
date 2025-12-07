@@ -5,10 +5,10 @@
   "source": "@site/docs/introduction/why-physical-ai-matters.mdx",
   "sourceDirName": "introduction",
   "slug": "/introduction/why-physical-ai-matters",
-  "permalink": "/physical-ai-textbook/docs/introduction/why-physical-ai-matters",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/introduction/why-physical-ai-matters",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/introduction/why-physical-ai-matters.mdx",
+  "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/docs/introduction/why-physical-ai-matters.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "Introduction: Why Physical AI Matters",
-    "permalink": "/physical-ai-textbook/docs/introduction/why-physical-ai-matters"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/introduction/why-physical-ai-matters"
   }
 }

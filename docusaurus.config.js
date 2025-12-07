@@ -26,7 +26,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/',
+          editUrl: 'https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/',
           remarkPlugins: [require('remark-mermaid')],
         },
         theme: {
@@ -74,7 +74,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/zahir9048/physical-ai-textbook',
+            href: 'https://github.com/zahir9048/Physical-AI-Humanoid-Robotics',
             label: 'GitHub',
             position: 'right',
           },
@@ -114,7 +114,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/zahir9048/physical-ai-textbook',
+                href: 'https://github.com/zahir9048/Physical-AI-Humanoid-Robotics',
               },
             ],
           },

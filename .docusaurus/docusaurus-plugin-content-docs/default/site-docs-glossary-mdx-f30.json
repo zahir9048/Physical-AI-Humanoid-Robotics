@@ -5,10 +5,10 @@
   "source": "@site/docs/glossary.mdx",
   "sourceDirName": ".",
   "slug": "/glossary",
-  "permalink": "/physical-ai-textbook/docs/glossary",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/glossary",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/glossary.mdx",
+  "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/docs/glossary.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Prerequisites and Setup",
-    "permalink": "/physical-ai-textbook/docs/prerequisites-setup"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/prerequisites-setup"
   },
   "next": {
     "title": "Additional Resources",
-    "permalink": "/physical-ai-textbook/docs/additional-resources"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/additional-resources"
   }
 }

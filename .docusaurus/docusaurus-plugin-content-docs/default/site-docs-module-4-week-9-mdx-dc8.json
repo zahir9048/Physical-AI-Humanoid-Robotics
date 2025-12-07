@@ -5,10 +5,10 @@
   "source": "@site/docs/module-4/week-9.mdx",
   "sourceDirName": "module-4",
   "slug": "/module-4/week-9",
-  "permalink": "/physical-ai-textbook/docs/module-4/week-9",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-4/week-9",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-4/week-9.mdx",
+  "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/docs/module-4/week-9.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Week 8: Introduction to Isaac SDK and Isaac Sim",
-    "permalink": "/physical-ai-textbook/docs/module-4/week-8"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-4/week-8"
   },
   "next": {
     "title": "Week 10: Reinforcement Learning and Sim-to-Real Transfer",
-    "permalink": "/physical-ai-textbook/docs/module-4/week-10"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-4/week-10"
   }
 }

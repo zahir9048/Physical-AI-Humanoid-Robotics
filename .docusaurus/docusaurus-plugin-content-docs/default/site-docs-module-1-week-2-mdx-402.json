@@ -5,10 +5,10 @@
   "source": "@site/docs/module-1/week-2.mdx",
   "sourceDirName": "module-1",
   "slug": "/module-1/week-2",
-  "permalink": "/physical-ai-textbook/docs/module-1/week-2",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-1/week-2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-1/week-2.mdx",
+  "editUrl": "https://github.com/zahir9048/Physical-AI-Humanoid-Robotics/tree/001-build-comprehensive-textbook/docs/module-1/week-2.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Week 1: Foundations of Physical AI and Embodied Intelligence",
-    "permalink": "/physical-ai-textbook/docs/module-1/week-1"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-1/week-1"
   },
   "next": {
     "title": "Week 3: ROS 2 Architecture and Core Concepts",
-    "permalink": "/physical-ai-textbook/docs/module-2/week-3"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-2/week-3"
   }
 }
