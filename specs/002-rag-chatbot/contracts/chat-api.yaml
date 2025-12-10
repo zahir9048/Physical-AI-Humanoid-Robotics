@@ -1,0 +1,332 @@
+openapi: 3.0.0
+info:
+  title: RAG Chatbot API
+  description: API for the Physical AI & Humanoid Robotics textbook chatbot
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Development server
+  - url: https://your-deployed-backend.com
+    description: Production server
+
+paths:
+  /api/chat/query:
+    post:
+      summary: Submit a query to the chatbot
+      description: Process a user query against textbook content and return a response
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatRequest'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatResponse'
+        '429':
+          description: Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/chat/stream:
+    post:
+      summary: Stream chat response
+      description: Stream a chat response using Server-Sent Events
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatRequest'
+      responses:
+        '200':
+          description: Streaming response
+          content:
+            text/event-stream:
+              schema:
+                type: string
+                format: binary
+        '429':
+          description: Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/chat/history/{conversation_id}:
+    get:
+      summary: Get conversation history
+      description: Retrieve the history of messages for a specific conversation
+      parameters:
+        - name: conversation_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Conversation history
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConversationHistory'
+        '404':
+          description: Conversation not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/feedback:
+    post:
+      summary: Submit feedback
+      description: Submit user feedback on a specific message
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FeedbackRequest'
+      responses:
+        '200':
+          description: Feedback submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackResponse'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /api/health:
+    get:
+      summary: Health check
+      description: Check the health status of the API
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+components:
+  schemas:
+    ChatRequest:
+      type: object
+      required:
+        - query
+      properties:
+        query:
+          type: string
+          description: The user's question or query
+          example: "Explain ROS 2 nodes"
+        conversation_id:
+          type: string
+          format: uuid
+          description: Optional conversation ID for maintaining context
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        selected_text:
+          type: string
+          description: Optional text selected by the user for context
+          example: "A ROS 2 node is a process that performs computation..."
+        page_url:
+          type: string
+          description: Optional URL of the page where query originated
+          example: "/module-1/week-1"
+
+    ChatResponse:
+      type: object
+      required:
+        - conversation_id
+        - response
+        - citations
+      properties:
+        conversation_id:
+          type: string
+          format: uuid
+          description: The conversation ID
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        response:
+          type: string
+          description: The chatbot's response
+          example: "ROS 2 nodes are..."
+        citations:
+          type: array
+          items:
+            $ref: '#/components/schemas/Citation'
+          description: List of citations to textbook sections
+        sources:
+          type: array
+          items:
+            type: string
+          description: List of source chunk IDs used in response
+
+    Citation:
+      type: object
+      required:
+        - title
+        - url
+        - chapter
+        - section
+      properties:
+        title:
+          type: string
+          description: Title of the cited section
+          example: "Understanding ROS 2 Nodes"
+        url:
+          type: string
+          description: URL to the cited section
+          example: "/module-1/week-1#ros2-nodes"
+        chapter:
+          type: string
+          description: Chapter identifier
+          example: "Module 1, Week 1"
+        section:
+          type: string
+          description: Section identifier
+          example: "ROS 2 Architecture"
+
+    ConversationHistory:
+      type: object
+      required:
+        - conversation_id
+        - messages
+      properties:
+        conversation_id:
+          type: string
+          format: uuid
+          description: The conversation ID
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+
+    Message:
+      type: object
+      required:
+        - id
+        - role
+        - content
+        - timestamp
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique message ID
+          example: "123e4567-e89b-12d3-a456-426614174001"
+        role:
+          type: string
+          enum: [user, assistant, system]
+          description: The role of the message sender
+          example: "user"
+        content:
+          type: string
+          description: The message content
+          example: "What are ROS 2 nodes?"
+        timestamp:
+          type: string
+          format: date-time
+          description: When the message was created
+          example: "2025-12-09T10:00:00Z"
+
+    FeedbackRequest:
+      type: object
+      required:
+        - message_id
+        - rating
+      properties:
+        message_id:
+          type: string
+          format: uuid
+          description: ID of the message being rated
+          example: "123e4567-e89b-12d3-a456-426614174001"
+        rating:
+          type: integer
+          minimum: -1
+          maximum: 1
+          description: Rating (-1: dislike, 0: neutral, 1: like)
+          example: 1
+        comment:
+          type: string
+          description: Optional comment with the feedback
+          example: "This explanation was very helpful"
+
+    FeedbackResponse:
+      type: object
+      required:
+        - success
+        - message
+      properties:
+        success:
+          type: boolean
+          description: Whether feedback was submitted successfully
+          example: true
+        message:
+          type: string
+          description: Response message
+          example: "Feedback submitted successfully"
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: string
+          description: Error message
+          example: "Rate limit exceeded"
+        details:
+          type: object
+          description: Additional error details (optional)
+          example: {"retry_after": 60}
+
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - timestamp
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unavailable]
+          description: Health status
+          example: "healthy"
+        timestamp:
+          type: string
+          format: date-time
+          description: When the check was performed
+          example: "2025-12-09T10:00:00Z"
+        details:
+          type: object
+          description: Additional health details (optional)
+          example: {"db_status": "connected", "qdrant_status": "connected"}

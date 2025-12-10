@@ -1,3 +1,5 @@
+@import './tailwind.css';
+
 /**
  * Any CSS or SCSS file in this folder will be copied to the 'assets/css' folder and
  * loaded in the client-side JavaScript. For example, if you have a file like

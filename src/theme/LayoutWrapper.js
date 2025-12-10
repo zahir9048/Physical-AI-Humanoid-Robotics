@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { useLocation, useHistory } from '@docusaurus/router';
 import { useLocaleContext } from '@docusaurus/theme-common';
+import ChatWidget from '../components/Chatbot/ChatWidget';
 
 // Custom layout wrapper to handle RTL direction for Urdu
 export default function LayoutWrapper(props) {
@@ -26,5 +27,10 @@ export default function LayoutWrapper(props) {
     };
   }, [locale]);
 
-  return <Layout {...props} />;
+  return (
+    <>
+      <Layout {...props} />
+      <ChatWidget />
+    </>
+  );
 }
