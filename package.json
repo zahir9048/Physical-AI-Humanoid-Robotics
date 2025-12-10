@@ -20,11 +20,20 @@
     "@easyops-cn/docusaurus-search-local": "^0.52.2",
     "@mdx-js/react": "^3.0.0",
     "algoliasearch": "^4.0.0",
+    "autoprefixer": "^10.4.22",
+    "axios": "^1.13.2",
     "clsx": "^1.2.1",
+    "lucide-react": "^0.556.0",
+    "postcss": "^8.5.6",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remark-mermaid": "^0.2.0"
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^16.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-mermaid": "^0.2.0",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.0.0",
