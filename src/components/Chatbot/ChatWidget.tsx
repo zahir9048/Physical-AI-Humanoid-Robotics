@@ -5,12 +5,24 @@ import ChatMessage from './ChatMessage';
 import ChatInput from './ChatInput';
 import { MessageCircle, X, Bot, User } from 'lucide-react';
 
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 interface ChatWidgetProps {
   initialSelectedText?: string;
   initialPageUrl?: string;
 }
 
 const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initialPageUrl = '' }) => {
+  const { siteConfig } = useDocusaurusContext();
+  
+  // Configure API URL from Docusaurus config
+  useEffect(() => {
+    const apiUrl = siteConfig.customFields?.apiBaseUrl as string;
+    if (apiUrl) {
+      ChatAPI.setBaseUrl(apiUrl);
+    }
+  }, [siteConfig]);
+
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
