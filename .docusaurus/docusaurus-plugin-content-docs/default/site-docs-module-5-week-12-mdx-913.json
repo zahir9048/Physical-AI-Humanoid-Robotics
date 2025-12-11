@@ -5,7 +5,7 @@
   "source": "@site/docs/module-5/week-12.mdx",
   "sourceDirName": "module-5",
   "slug": "/module-5/week-12",
-  "permalink": "/physical-ai-textbook/docs/module-5/week-12",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-5/week-12",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-5/week-12.mdx",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Week 11: Kinematics, Dynamics, and Motion Planning",
-    "permalink": "/physical-ai-textbook/docs/module-5/week-11"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-5/week-11"
   },
   "next": {
     "title": "Week 13: Conversational Robotics",
-    "permalink": "/physical-ai-textbook/docs/module-6/week-13"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-6/week-13"
   }
 }

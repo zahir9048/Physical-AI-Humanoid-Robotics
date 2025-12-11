@@ -46,10 +46,12 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
     }
   }, [conversationId]);
 
-  // Scroll to bottom of messages when they change
+  // Scroll to bottom of messages when they change or when chat is opened
   useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
+    if (isOpen) {
+      setTimeout(scrollToBottom, 100);
+    }
+  }, [messages, isOpen]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -167,9 +169,9 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
 
       {/* Chat widget */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-full max-w-md h-[70vh] flex flex-col bg-white rounded-lg shadow-xl border border-gray-200 z-50 text-left" style={{ zIndex: 9999 }}>
+        <div className="fixed bottom-0 right-0 w-full h-[100dvh] sm:bottom-6 sm:right-6 sm:max-w-md sm:h-[70vh] flex flex-col bg-white sm:rounded-lg shadow-xl border border-gray-200 z-50 text-left" style={{ zIndex: 9999 }}>
           {/* Header */}
-          <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+          <div className="bg-blue-600 text-white p-4 sm:rounded-t-lg flex justify-between items-center">
             <h2 className="font-semibold m-0 text-white text-base">Physical AI Assistant</h2>
             <div className="flex space-x-2">
               {/* <button

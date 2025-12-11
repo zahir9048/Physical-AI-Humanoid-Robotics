@@ -5,7 +5,7 @@
   "source": "@site/docs/module-3/week-6.mdx",
   "sourceDirName": "module-3",
   "slug": "/module-3/week-6",
-  "permalink": "/physical-ai-textbook/docs/module-3/week-6",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-3/week-6",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/module-3/week-6.mdx",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Week 5: Advanced ROS 2 Concepts and Tools",
-    "permalink": "/physical-ai-textbook/docs/module-2/week-5"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-2/week-5"
   },
   "next": {
     "title": "Week 7: Physics, Sensor Simulation, and Unity Introduction",
-    "permalink": "/physical-ai-textbook/docs/module-3/week-7"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-3/week-7"
   }
 }

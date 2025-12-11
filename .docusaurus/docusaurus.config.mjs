@@ -8,10 +8,13 @@ export default {
   "tagline": "From Foundations to Embodied Intelligence",
   "favicon": "img/favicon.ico",
   "url": "https://zahir9048.github.io",
-  "baseUrl": "/physical-ai-textbook/",
+  "baseUrl": "/Physical-AI-Humanoid-Robotics/",
   "organizationName": "zahir9048",
   "projectName": "physical-ai-textbook",
   "onBrokenLinks": "throw",
+  "customFields": {
+    "apiBaseUrl": "http://localhost:8000/api"
+  },
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -372,7 +375,6 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
   "plugins": [],
   "scripts": [],
   "headTags": [],

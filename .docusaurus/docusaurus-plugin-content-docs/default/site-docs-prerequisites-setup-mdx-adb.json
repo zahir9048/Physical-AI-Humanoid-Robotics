@@ -5,7 +5,7 @@
   "source": "@site/docs/prerequisites-setup.mdx",
   "sourceDirName": ".",
   "slug": "/prerequisites-setup",
-  "permalink": "/physical-ai-textbook/docs/prerequisites-setup",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/prerequisites-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/prerequisites-setup.mdx",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Hardware Requirements",
-    "permalink": "/physical-ai-textbook/docs/hardware-requirements"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/hardware-requirements"
   },
   "next": {
     "title": "Glossary",
-    "permalink": "/physical-ai-textbook/docs/glossary"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/glossary"
   }
 }
