@@ -14,6 +14,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  
   // Expose env vars to client side
   customFields: {
     // Falls back to localhost if env var not set (local dev)
