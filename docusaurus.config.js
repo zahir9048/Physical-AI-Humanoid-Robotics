@@ -14,6 +14,12 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Expose env vars to client side
+  customFields: {
+    // Falls back to localhost if env var not set (local dev)
+    apiBaseUrl: process.env.REACT_APP_API_URL || 'http://localhost:8000/api',
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],

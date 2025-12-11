@@ -8,7 +8,6 @@ import {
   HealthResponse
 } from './types';
 
-// Use environment variable or default to localhost
 const API_BASE_URL = 'http://localhost:8000/api';
 
 class ChatAPI {
@@ -18,6 +17,10 @@ class ChatAPI {
       'Content-Type': 'application/json',
     },
   });
+
+  public setBaseUrl(url: string) {
+    this.api.defaults.baseURL = url;
+  }
 
   async chatQuery(request: ChatRequest): Promise<ChatResponse> {
     try {
