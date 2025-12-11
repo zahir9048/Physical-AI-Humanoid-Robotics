@@ -106,7 +106,13 @@ html[dir="rtl"] .search-bar {
   padding-right: 0.5rem;
 }
 
+
 /* Navbar logo sizing */
 .navbar__logo img {
   width: auto;
+}
+
+/* Footer customization */
+.footer--dark {
+  --ifm-footer-background-color: #1a2b4b;
 }

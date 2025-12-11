@@ -5,7 +5,7 @@
   "source": "@site/docs/additional-resources.mdx",
   "sourceDirName": ".",
   "slug": "/additional-resources",
-  "permalink": "/physical-ai-textbook/docs/additional-resources",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/additional-resources",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/additional-resources.mdx",
@@ -17,6 +17,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Glossary",
-    "permalink": "/physical-ai-textbook/docs/glossary"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/glossary"
   }
 }

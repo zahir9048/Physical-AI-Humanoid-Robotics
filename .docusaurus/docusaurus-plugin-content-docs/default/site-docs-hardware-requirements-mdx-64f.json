@@ -5,7 +5,7 @@
   "source": "@site/docs/hardware-requirements.mdx",
   "sourceDirName": ".",
   "slug": "/hardware-requirements",
-  "permalink": "/physical-ai-textbook/docs/hardware-requirements",
+  "permalink": "/Physical-AI-Humanoid-Robotics/docs/hardware-requirements",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/zahir9048/physical-ai-textbook/tree/001-build-comprehensive-textbook/docs/hardware-requirements.mdx",
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Capstone Project",
-    "permalink": "/physical-ai-textbook/docs/module-6/capstone-project"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/module-6/capstone-project"
   },
   "next": {
     "title": "Prerequisites and Setup",
-    "permalink": "/physical-ai-textbook/docs/prerequisites-setup"
+    "permalink": "/Physical-AI-Humanoid-Robotics/docs/prerequisites-setup"
   }
 }
