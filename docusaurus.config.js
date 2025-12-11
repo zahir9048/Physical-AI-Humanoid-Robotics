@@ -6,7 +6,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://zahir9048.github.io',
-  baseUrl: '/physical-ai-textbook/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics/',
 
   organizationName: 'zahir9048', // Usually your GitHub org/user name.
   projectName: 'physical-ai-textbook', // Usually your repo name.
