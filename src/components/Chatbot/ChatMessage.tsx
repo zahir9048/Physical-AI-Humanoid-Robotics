@@ -15,6 +15,39 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, avatar }) => {
 
   const citations = message.source_chunks || [];
 
+  // Format timestamp
+  const formatTimestamp = (timestamp: string) => {
+    try {
+      const date = new Date(timestamp);
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      const messageDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+      
+      // Check if it's today
+      if (messageDate.getTime() === today.getTime()) {
+        // Show only time for today
+        return date.toLocaleTimeString('en-US', { 
+          hour: 'numeric', 
+          minute: '2-digit',
+          hour12: true 
+        });
+      } else {
+        // Show date and time for older messages
+        return date.toLocaleString('en-US', {
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: true
+        });
+      }
+    } catch (error) {
+      return '';
+    }
+  };
+
+  const formattedTime = message.timestamp ? formatTimestamp(message.timestamp) : '';
+
   const handleFeedback = async (rating: -1 | 0 | 1) => {
     if (feedback.rating === rating) {
       setFeedback({ rating: 0 });
@@ -48,6 +81,12 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, avatar }) => {
             {message.content}
           </ReactMarkdown>
         </div>
+
+        {formattedTime && (
+          <div className={`text-xs mt-2 ${isUser ? 'text-blue-100' : 'text-gray-500'}`}>
+            {formattedTime}
+          </div>
+        )}
 
         {citations.length > 0 && (
           <div className="mt-2 pt-2 border-t border-gray-300">

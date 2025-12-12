@@ -4,7 +4,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
   },
   "include": ["src/**/*"]
 }

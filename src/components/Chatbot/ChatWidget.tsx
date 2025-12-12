@@ -3,7 +3,7 @@ import { Message, ChatRequest } from '../../services/types';
 import ChatAPI from '../../services/ChatAPI';
 import ChatMessage from './ChatMessage';
 import ChatInput from './ChatInput';
-import { MessageCircle, X, Bot, User } from 'lucide-react';
+import { MessageCircle, X, Bot, User, Mic } from 'lucide-react';
 
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
@@ -26,6 +26,8 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingHistory, setIsLoadingHistory] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
   const [conversationId, setConversationId] = useState<string>('');
   const [selectedText, setSelectedText] = useState(initialSelectedText);
   const [pageUrl, setPageUrl] = useState(initialPageUrl);
@@ -53,12 +55,24 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
     }
   }, [messages, isOpen]);
 
+  // Scroll to bottom when recording starts
+  useEffect(() => {
+    if (isRecording && isOpen) {
+      setTimeout(scrollToBottom, 100);
+    }
+  }, [isRecording, isOpen]);
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleSendMessage = async (query: string) => {
     if (!query.trim() || isLoading) return;
+
+    // Stop recording if active
+    if (isRecording) {
+      setIsRecording(false);
+    }
 
     // Add user message to the chat
     const userMessage: Message = {
@@ -128,7 +142,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
   const handleLoadHistory = async () => {
     if (!conversationId) return;
 
-    setIsLoading(true);
+    setIsLoadingHistory(true);
     try {
       const history = await ChatAPI.getConversationHistory(conversationId);
       if (history) {
@@ -145,7 +159,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
     } catch (error) {
       console.error('Error loading conversation history:', error);
     } finally {
-      setIsLoading(false);
+      setIsLoadingHistory(false);
     }
   };
 
@@ -170,6 +184,16 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
       {/* Chat widget */}
       {isOpen && (
         <div className="fixed bottom-0 right-0 w-full h-[100dvh] sm:bottom-6 sm:right-6 sm:max-w-md sm:h-[70vh] flex flex-col bg-white sm:rounded-lg shadow-xl border border-gray-200 z-50 text-left" style={{ zIndex: 9999 }}>
+          <style>{`
+            @keyframes wave {
+              0%, 100% {
+                transform: scaleY(0.4);
+              }
+              50% {
+                transform: scaleY(1);
+              }
+            }
+          `}</style>
           {/* Header */}
           <div className="bg-blue-600 text-white p-4 sm:rounded-t-lg flex justify-between items-center">
             <h2 className="font-semibold m-0 text-white text-base">Physical AI Assistant</h2>
@@ -201,25 +225,57 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
 
           {/* Messages container */}
           <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
-            {messages.length === 0 ? (
+            {isLoadingHistory ? (
               <div className="h-full flex flex-col items-center justify-center text-gray-500">
-                <Bot className="mb-2" size={32} />
-                <p>Ask me anything about the Physical AI & Humanoid Robotics textbook!</p>
-                {selectedText && (
-                  <p className="mt-2 text-sm text-blue-600">
-                    Selected text: "{selectedText.substring(0, 50)}..."
-                  </p>
-                )}
+                <div className="flex flex-col items-center">
+                  <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
+                  <p>Loading chat history...</p>
+                </div>
               </div>
             ) : (
               <>
-                {messages.map((message) => (
-                  <ChatMessage
-                    key={message.id}
-                    message={message}
-                    avatar={message.role === 'user' ? <User size={16} /> : <Bot size={16} />}
-                  />
-                ))}
+                {messages.length === 0 && !isRecording ? (
+                  <div className="h-full flex flex-col items-center justify-center text-gray-500">
+                    <Bot className="mb-2" size={32} />
+                    <p>Ask me anything about the Physical AI & Humanoid Robotics textbook!</p>
+                    {selectedText && (
+                      <p className="mt-2 text-sm text-blue-600">
+                        Selected text: "{selectedText.substring(0, 50)}..."
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <>
+                    {messages.map((message) => (
+                      <ChatMessage
+                        key={message.id}
+                        message={message}
+                        avatar={message.role === 'user' ? <User size={16} /> : <Bot size={16} />}
+                      />
+                    ))}
+                  </>
+                )}
+                {isRecording && (
+                  <div className="flex items-start mb-4">
+                    <div className="bg-red-100 rounded-full p-2 mr-3">
+                      <Mic size={16} className="text-red-600" />
+                    </div>
+                    <div className="bg-gray-200 rounded-lg p-3">
+                      <div className="flex items-center space-x-1">
+                        <div className="flex items-end space-x-1 h-6">
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '40%', animation: 'wave 0.8s ease-in-out infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '60%', animation: 'wave 0.8s ease-in-out 0.1s infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '80%', animation: 'wave 0.8s ease-in-out 0.2s infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '100%', animation: 'wave 0.8s ease-in-out 0.3s infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '80%', animation: 'wave 0.8s ease-in-out 0.4s infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '60%', animation: 'wave 0.8s ease-in-out 0.5s infinite' }}></div>
+                          <div className="w-1 bg-red-500 rounded" style={{ height: '40%', animation: 'wave 0.8s ease-in-out 0.6s infinite' }}></div>
+                        </div>
+                        <span className="ml-2 text-sm text-gray-600">Listening...</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
                 {isLoading && (
                   <div className="flex items-start mb-4">
                     <div className="bg-blue-100 rounded-full p-2 mr-3">
@@ -245,6 +301,7 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ initialSelectedText = '', initi
               onSendMessage={handleSendMessage}
               disabled={isLoading}
               placeholder="Ask about the textbook content..."
+              onListeningChange={setIsRecording}
             />
           </div>
         </div>

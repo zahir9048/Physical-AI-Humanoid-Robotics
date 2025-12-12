@@ -1,0 +1,26 @@
+# Environment Variables Template for Hugging Face Spaces
+# Configure these as Secrets in your Hugging Face Space settings
+
+# Provider Settings
+EMBEDDING_PROVIDER=cohere  # Options: openai, cohere, ollama, local
+LLM_PROVIDER=cohere  # Options: openai, cohere, ollama
+
+# OpenAI Settings (if using OpenAI)
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4-turbo-preview
+
+# Cohere Settings (if using Cohere)
+COHERE_API_KEY=your_cohere_api_key_here
+COHERE_EMBEDDING_MODEL=embed-english-v3.0
+COHERE_MODEL=command-r-plus
+
+# Qdrant Settings
+QDRANT_URL=your_qdrant_url_here
+QDRANT_API_KEY=your_qdrant_api_key_here
+QDRANT_COLLECTION_NAME=physical_ai_docs
+
+# Database Settings
+NEON_DATABASE_URL=postgresql://user:password@host:5432/database
+
+# Application Settings
+DEBUG=False
