@@ -5,7 +5,7 @@ from src.core.config import settings
 from src.services.embedding_service import embedding_service
 
 class TextbookChunk:
-    def __init__(self, id: str, content: str, title: str, chapter: str, section: str, url: str, source_file: str, position: int, metadata: dict = None):
+    def __init__(self, id: str, content: str, title: str, chapter: str, section: str, url: str, source_file: str, position: int, metadata: dict = None, score: float = None):
         self.id = id
         self.content = content
         self.title = title
@@ -15,6 +15,7 @@ class TextbookChunk:
         self.source_file = source_file
         self.position = position
         self.metadata = metadata or {}
+        self.score = score  # Similarity score from vector search
 
 class QdrantService:
     def __init__(self):
@@ -42,6 +43,8 @@ class QdrantService:
         chunks = []
         for result in search_results:
             payload = result.payload
+            # Qdrant returns scores (higher is better for cosine similarity, typically 0-1 range)
+            score = result.score if hasattr(result, 'score') else None
             chunk = TextbookChunk(
                 id=str(result.id),
                 content=payload.get("content", ""),
@@ -51,7 +54,8 @@ class QdrantService:
                 url=payload.get("url", ""),
                 source_file=payload.get("source_file", ""),
                 position=payload.get("position", 0),
-                metadata=payload.get("metadata", {})
+                metadata=payload.get("metadata", {}),
+                score=score
             )
             chunks.append(chunk)
 
