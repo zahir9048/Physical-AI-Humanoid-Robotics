@@ -46,22 +46,21 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, disabled, placehol
       };
 
       recognition.onresult = (event: any) => {
-        // Accumulate all results
-        let interimTranscript = '';
-        let finalTranscript = accumulatedTranscriptRef.current;
-
-        for (let i = event.resultIndex; i < event.results.length; i++) {
+        let sessionTranscript = '';
+        
+        // Reconstruct full transcript from the current session
+        // This prevents duplication issues common on mobile where resultIndex can be unreliable
+        for (let i = 0; i < event.results.length; i++) {
           const transcript = event.results[i][0].transcript;
-          if (event.results[i].isFinal) {
-            finalTranscript += (finalTranscript ? ' ' : '') + transcript;
-            accumulatedTranscriptRef.current = finalTranscript;
-          } else {
-            interimTranscript += transcript;
-          }
+          // Add spacing between segments
+          sessionTranscript += (i > 0 ? ' ' : '') + transcript;
         }
 
-        // Update input with final + interim transcript
-        setInputValue(finalTranscript + interimTranscript);
+        // Combine with what was originally in the input
+        const initialText = accumulatedTranscriptRef.current;
+        const spacing = initialText && !initialText.endsWith(' ') && sessionTranscript ? ' ' : '';
+        
+        setInputValue(initialText + spacing + sessionTranscript);
       };
 
       recognition.onerror = (event: any) => {
